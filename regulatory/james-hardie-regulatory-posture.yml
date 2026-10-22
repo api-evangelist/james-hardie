@@ -1,0 +1,84 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.jameshardie.com/privacy-policy/
+scope: >-
+  Privacy Policy of James Hardie Building Products Inc. and its related corporate entities (North America).
+  The Terms & Conditions page (https://www.jameshardie.com/terms-conditions/, HTTP 200) was also read; its only
+  candidate passage ("Your rights are governed by the terms of the contract you enter into with the
+  installer/remodeler") concerns installer contracts, not data rights, so no signal is recorded from it.
+signals:
+  data_subject_request:
+    url: https://www.jameshardie.com/privacy-policy/
+    section: How To Submit Privacy Requests
+    channel: email (address obfuscated on the page) or phone 866-274-3464
+    rights_named: [access, update, deletion, opt-out of sale, information about processing, portability, restriction, objection, complaint to supervisory authority]
+    evidence:
+    - source: https://www.jameshardie.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Note that you may also contact us to request information regarding the purpose of any processing
+        activity, the categories of personal information processed, the recipients of the data (if a transfer
+        is made), the duration of the storage or the criteria for determining the duration. You also have the
+        right to receive personal information in a structured, common and machine-readable format or to have it
+        transferred to a third party, to restrict processing, to object to processing, or to complaint to the
+        relevant supervisory authority about unauthorized processing activity.
+    note: >-
+      Names a request channel (email or 866-274-3464) and a set of GDPR-style rights including portability. No
+      response time is stated.
+  data_retention:
+    url: https://www.jameshardie.com/privacy-policy/
+    section: Storage Period
+    evidence:
+    - source: https://www.jameshardie.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We store your information: if you have consented to the processing, at most until you revoke your
+        consent; if we need the information for the execution of a contract, at most for as long as the
+        contractual relationship with you exists; if we use the information on the basis of a legitimate
+        interest, at most for as long as your interest in deletion or anonymization does not outweigh our
+        interest in keeping the information; insofar as there is a legal storage obligation, in compliance with
+        that obligation.
+    note: Retention is tied to the legal basis for processing. No fixed periods are given.
+  ai_transparency:
+    url: https://www.jameshardie.com/privacy-policy/
+    section: Automated Decision-Making Including Profiling
+    evidence:
+    - source: https://www.jameshardie.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        This is how we decide which products and offers to include in our communication. This process may
+        involve automated decision-making to determine which messages will be most meaningful to you based on
+        your interests, preferences, and location.
+    note: >-
+      Discloses automated decision-making and profiling (including data from data brokers) for marketing
+      targeting. AI is not mentioned. This is an automated-processing disclosure, not an AI-system statement.
+  data_residency:
+    url: https://www.jameshardie.com/privacy-policy/
+    section: How We May Transfer Personal Information Overseas
+    commitment: none (cross-border transfer permitted)
+    evidence:
+    - source: https://www.jameshardie.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        In addition, we may disclose your personal information to our third-party service providers who may be
+        based in or have servers located outside of the country in which you live.
+    note: >-
+      No in-country residency commitment. Data may be held by affiliates and service providers abroad, with
+      transfers protected by contract, comparable obligations or consent, and the EU-US (and UK Extension) Data
+      Privacy Framework for GDPR data.
+  age_assurance:
+    url: https://www.jameshardie.com/privacy-policy/
+    section: Supplemental Policy For California Residents
+    evidence:
+    - source: https://www.jameshardie.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We do not knowingly sell the personal information of consumers under 16 years of age.
+    note: >-
+      Only a CCPA-style statement about minors, with no age-verification mechanism described. The dossier's
+      incident_notification candidate ("protect against security incidents and malicious activity") is a
+      purpose of use, not a breach-notification commitment, so it is not recorded.

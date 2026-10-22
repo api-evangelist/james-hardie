@@ -1,0 +1,23 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/james-hardie/integrations
+- https://n8n.io/integrations/james-hardie/
+- https://composio.dev/toolkits/james-hardie
+- https://monid.ai/tools/james-hardie
+checked:
+- https://zapier.com/apps/james-hardie/integrations
+- https://www.jameshardie.com/
+- https://www.jameshardie.com.au/bim-downloads
+- https://api.github.com/orgs/jameshardie/repos
+- https://composio.dev/toolkits/james-hardie
+- https://monid.ai/tools/james-hardie
+- https://n8n.io/integrations/james-hardie/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No API integrations found. Zapier has no James Hardie app (HTTP 404). James Hardie publishes no API, so no
+  contract edges exist. The Australian BIM downloads page (HTTP 200) embeds a BIMcontent.com product library (bimcontent.com/james-hardie/?store=james-hardie).
+  That is content distribution (Revit/Archicad objects), not a software integration, so it is not recorded as an
+  edge.

@@ -1,23 +1,91 @@
 aid: james-hardie
+
 name: James Hardie
-description: 'James Hardie is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'James Hardie is a world-leading manufacturer of fiber cement building products, credited with pioneering modern fiber cement technology and producing the #1 brand of siding in North America (Hardie siding, trim, soffit, panels and backer board). With 5,000+ employees, 19 manufacturing facilities and 3 R&D centers across North America, Europe, Australia and New Zealand, it serves homeowners, builders, contractors, architects and dealers, the latter through its Hardie Link dealer portal. No public developer API is published on jameshardie.com.'
+
 url: https://raw.githubusercontent.com/api-evangelist/james-hardie/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Building Products
+- Fiber Cement
+- Siding
+- Construction
+- Manufacturing
+- Home Improvement
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://images.ctfassets.net/dzi2asncd44t/1y2u4Jw8QJqQyKwubHGbDl/051c43c9543ba4d78a39ee5019cc116b/hero-video-hardie-architectural-panel-shiplap-shou-sugi-ban-summer-white.jpg
+
 common:
+- type: Hosts
+  url: hosts/james-hardie-hosts.yml
+- type: Vendors
+  url: vendors/james-hardie-vendors.yml
+- type: DomainSecurity
+  url: security/james-hardie-domain-security.yml
 - type: Website
-  url: https://jameshardie.com/
+  url: https://www.jameshardie.com/
+- type: About
+  url: https://www.jameshardie.com/all-about-james-hardie/
+- type: Blog
+  url: https://www.jameshardie.com/blog/
+- type: Newsroom
+  url: https://www.jameshardie.com/all-about-james-hardie/press-releases/
+- type: Support
+  url: https://www.jameshardie.com/contact-james-hardie/
+- type: FAQ
+  url: https://www.jameshardie.com/faq/
+- type: Careers
+  url: https://www.jameshardie.com/all-about-james-hardie/careers-james-hardie/
+- type: InvestorRelations
+  url: https://ir.jameshardie.com.au/
+- type: Login
+  url: https://hardielink.jameshardie.com/login
+- type: TermsOfService
+  url: https://www.jameshardie.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://www.jameshardie.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/jameshardie
+- type: YouTube
+  url: https://www.youtube.com/@JamesHardieBP
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website confirmed from the company own homepage (title "House Siding & Backer Board | James Hardie"); pointers taken from links on jameshardie.com. GitHub org "jameshardie" exists but has 0 repos and no link from the site, so it is not recorded.
+  evidence:
+  - url: https://jameshardie.com/
+    status: 200
+  - url: https://www.jameshardie.com/all-about-james-hardie/
+    status: 200
+  - url: https://ir.jameshardie.com.au/
+    status: 403
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

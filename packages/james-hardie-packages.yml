@@ -1,0 +1,5 @@
+generated: '2026-10-21'
+method: none
+source: https://registry.npmjs.org/-/v1/search?text=jameshardie
+packages: []
+note: No first-party client library found. npm search for "jameshardie" returned 0 results (HTTP 200); pypi.org/pypi/jameshardie/json returned 404; GitHub org "jameshardie" lists 0 public repos (api.github.com, HTTP 200, []). James Hardie publishes no developer API or SDK.
